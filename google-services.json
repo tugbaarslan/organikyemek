@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "365364834169",
+    "project_id": "organikyemek-ffc3e",
+    "storage_bucket": "organikyemek-ffc3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365364834169:android:6571d75ce92fc6584089a8",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365364834169-3kfe1vnp6g9i1rm498g45ubpjcig4a50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa0WG0Wh7GEDU00MdHvVvS6itDGqHFQ7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365364834169-3kfe1vnp6g9i1rm498g45ubpjcig4a50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

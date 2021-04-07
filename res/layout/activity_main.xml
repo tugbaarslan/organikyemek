@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+    android:id="@+id/parent">
+
+    <ImageView
+        android:id="@+id/profilResmi"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="32dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/resimButonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Fotoğraf Seç"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profilResmi"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <EditText
+        android:id="@+id/isimDuzenleme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="180dp"
+        android:ems="10"
+        android:hint="İsim"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <EditText
+        android:id="@+id/emailDuzenleme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="180dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/emailDuzenlemeUyarisi" />
+
+    <EditText
+        android:id="@+id/sifreDuzenleme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="180dp"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/sifreDuzenlemeUyarisi" />
+
+    <EditText
+        android:id="@+id/sifreDuzenlemeTekrari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="180dp"
+        android:ems="10"
+        android:hint="Şifre Tekrarı"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/sifreDuzenlemeTekrariUyarisi" />
+
+    <TextView
+        android:id="@+id/cinsiyet"
+        android:layout_width="78dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Cinsiyet"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/sifreDuzenlemeTekrari" />
+
+    <RadioGroup
+        android:id="@+id/rgCinsiyet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toEndOf="@+id/cinsiyet"
+        app:layout_constraintTop_toBottomOf="@+id/sifreDuzenlemeTekrari">
+
+        <RadioButton
+            android:id="@+id/rbKadin"
+            android:layout_width="71dp"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:text="Kadın" />
+
+        <RadioButton
+            android:id="@+id/rbErkek"
+            android:layout_width="71dp"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:text="Erkek" />
+
+        <RadioButton
+            android:id="@+id/rbDiger"
+            android:layout_width="71dp"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:text="Diğer" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ulke"
+        android:layout_width="78dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Ülke"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/cinsiyet" />
+
+    <Spinner
+        android:id="@+id/spinnerUlke"
+        android:layout_width="55dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="220dp"
+        android:entries="@array/ulkeler"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toEndOf="@+id/ulke"
+        app:layout_constraintTop_toBottomOf="@+id/rgCinsiyet" />
+
+    <Button
+        android:id="@+id/kaydolButonu"
+        android:layout_width="119dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="260dp"
+        android:text="Kaydol"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/onayKutusu" />
+
+    <TextView
+        android:id="@+id/onayMetniKabulu"
+        android:layout_width="270dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="110dp"
+        android:text="Lisans Sözleşmesini Onaylıyor Musunuz?"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/ulke" />
+
+    <CheckBox
+        android:id="@+id/onayKutusu"
+        android:layout_width="111dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="270dp"
+        android:checked="true"
+        android:text="Onaylıyorum"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/onayMetniKabulu" />
+
+    <TextView
+        android:id="@+id/isimDuzenlemeUyarisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#F44336"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <TextView
+        android:id="@+id/emailDuzenlemeUyarisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#F44336"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/isimDuzenleme"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <TextView
+        android:id="@+id/sifreDuzenlemeUyarisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        android:textColor="#F44336"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/emailDuzenleme"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <TextView
+        android:id="@+id/sifreDuzenlemeTekrariUyarisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#F44336"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/sifreDuzenleme"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="156dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="31dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="432dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

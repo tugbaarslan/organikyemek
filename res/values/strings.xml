@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <array name="ulkeler">
+        <item>Turkey</item>
+        <item>Saudi Arabia</item>
+        <item>Germany</item>
+        <item>Azerbaijan</item>
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>Mexico</item>
+        <item>United States</item>
+        <item>Canada</item>
+    </array>
+</resources>
